@@ -3,18 +3,556 @@
 {% block title %}Hello DefaultController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- preloder-wrap -->
+    <div id="cssLoader3" class="preloder-wrap">
+        <div class="loader">
+            <div class="child-common child4"></div>
+            <div class="child-common child3"></div>
+            <div class="child-common child2"></div>
+            <div class="child-common child1"></div>
+        </div>
+    </div>
+    <!-- preloder-wrap -->
+    <!-- search-area -->
+    <div class="search-area">
+        <span class="closs-btn">Close</span>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="search-form">
+                        <form action="#">
+                            <input type="text" name="search" placeholder="Search Here">
+                            <button type="button" name="button" class="btn-style">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- search-area -->
+    <!-- heared area start -->
+    <header class="header-area" id="sticky-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-8 col-xs-6">
+                    <div class="logo">
+                        <h1><a href="index.html">CTA development</a></h1>
+                    </div>
+                </div>
+                <div class="col-md-8 hidden-sm hidden-xs">
+                    <div class="mainmenu">
+                        <ul id="navigation">
+                            <li class="active">
+                                <a href="#">Home
+                                    <!--<i class="fa fa-angle-down"></i>-->
+                                </a>
+                                <!--<ul class="submenu">-->
+                                <!--<li><a href="#">Home One</a></li>-->
+                                <!--<li class="active"><a href="#">Home Two</a></li>-->
+                                <!--<li><a href="#">Home Three</a></li>-->
+                                <!--</ul>-->
+                            </li>
+                            <li><a href="#">About <i class="fa fa-angle-down"></i></a>
+                                <ul class="submenu">
+                                    <li><a href="#">about One</a></li>
+                                    <li><a href="#">about Two</a></li>
+                                    <li><a href="#">about Three</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Service <i class="fa fa-angle-down"></i></a>
+                                <ul class="submenu">
+                                    <li><a href="#">service One</a></li>
+                                    <li><a href="#">service Two</a></li>
+                                    <li><a href="#">service Single</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Equipe <i class="fa fa-angle-down"></i></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Equipe Une</a></li>
+                                    <!--<li><a href="team2.html">Equipe deux <span class="pull-right">+</span></a>-->
+                                    <!--<ul class="submenu">-->
+                                    <!--<li><a href="#">Sabmenu One</a></li>-->
+                                    <!--<li><a href="#">Sabmenu Two</a></li>-->
+                                    <!--<li><a href="#">Sabmenu Three <span class="pull-right">+</span></a>-->
+                                    <!--<ul class="submenu">-->
+                                    <!--<li><a href="#">Sabmenu One</a></li>-->
+                                    <!--<li><a href="#">Sabmenu Two</a></li>-->
+                                    <!--<li><a href="#">Sabmenu Three</a></li>-->
+                                    <!--<li><a href="#">Sabmenu Four</a></li>-->
+                                    <!--<li><a href="#">Sabmenu Five</a></li>-->
+                                    <!--</ul>-->
+                                    <!--</li>-->
+                                    <!--<li><a href="#">Sabmenu Four</a></li>-->
+                                    <!--<li><a href="#">Sabmenu Five</a></li>-->
+                                    <!--</ul>-->
+                                    <!--</li>-->
+                                    <li><a href="#">Team Three</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-1 col-sm-2 col-xs-3">
+                    <div class="search-wrap text-right">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2 clear col-xs-3 hidden-md hidden-lg">
+                    <div class="responsive-menu-wrap floatright"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- heared area end -->
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/wamp64/www/ctadev/src/Controller/DefaultController.php'|file_link(0) }}">src/Controller/DefaultController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/wamp64/www/ctadev/templates/default/index.html.twig'|file_link(0) }}">templates/default/index.html.twig</a></code></li>
-    </ul>
-</div>
+    <!-- slider area start -->
+    <section class="slider-area">
+        <div class="slider-active dotate-style slider-next-prev-style">
+            <div class="slider-items">
+                <img src="martxa/assets/images/slider/1.jpg" alt="" class="slider">
+                <div class="slider-content text-center">
+                    <div class="table">
+                        <div class="table-cell">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-8 col-md-offset-2">
+                                        <h2>Expert en conseils stratégiques</h2>
+                                        <p>
+                                            Ingénierie Civile, Ingénierie financière ,Planification et Management de projets, Conseil Stratégique.
+                                            <br>
+                                            Nous vous accompagnons dans vos projets de développement.
+                                        </p>
+                                        <ul>
+                                            <li><a href="#">Voir plus </a></li>
+                                            <!--<li><a href="#">Get Started</a></li>-->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-items">
+                <img src="martxa/assets/images/slider/2.jpg" alt="" class="slider">
+                <div class="slider-content text-center">
+                    <div class="table">
+                        <div class="table-cell">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-8 col-md-offset-2">
+                                        <h2>CTA development en afrique</h2>
+                                        <p>
+                                            Guinée Bissau, Togo , Côte d'ivoire .... <br>
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                        </p>
+                                        <ul>
+                                            <!--<li><a href="#">Get Started</a></li>-->
+                                            <li><a href="#">Voir plus </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- slider area end -->
+
+    <!-- about-area start -->
+    <section class="about-area ptb-140">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-12 wow fadeInLeft">
+                    <div class="about-wrap">
+                        <h2>QUI SOMMES NOUS ?</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.randomised words which don't look even slightly believable.</p>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised. by injected humour, or randomised.</p>
+                        <ul>
+                            <li>There are many variations of passages</li>
+                            <li>By injected humour or randomised.</li>
+                            <li>the majority have suffered alteration</li>
+                            <li>majority have suffered alteration</li>
+                            <li>variations of passages of Lorem Ipsum</li>
+                            <li>of passages of Lorem Ipsum</li>
+                            <li>many variations of passages.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12 wow fadeInRight">
+                    <div class="row mt-60">
+                        <div class="col-sm-6 col-xs-12 col">
+                            <div class="about-items mb-30">
+                                <i class="fa fa-building-o"></i>
+                                <h3>Ingénierie Civile </h3>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 col">
+                            <div class="about-items mb-30">
+                                <i class="fa fa-calculator"></i>
+                                <h3>Ingénierie financière</h3>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 col">
+                            <div class="about-items">
+                                <i class="fa fa-calendar"></i>
+                                <h3>Planification et Management de projets</h3>
+                            </div>
+                        </div><div class="col-sm-6 col-xs-12 col">
+                            <div class="about-items">
+                                <i class="fa fa-line-chart"></i>
+                                <h3>Conseil Stratégique</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about-area end -->
+
+    <!-- .service-area start -->
+    <section class="service-area home2-service-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-10 col-xs-12 wow fadeInUp">
+                    <div class="section-title section-title2">
+                        <h2>Nos valeurs</h2>
+                        <p>majority have suffered alteration in some form, by injected humour randomised. injected humour, or randomised.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".1s">
+                    <div class="service-wrap">
+                        <div class="service-content">
+                            <h3>Innovation</h3>
+                            <p>
+                                Attentif à l'évolution de notre sociètè, nous enticipons les changements pour les
+                                transformer en opportunités.
+                            </p>
+                            <a href="martxa/single-service.html">Voir plus </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".2s">
+                    <div class="service-wrap">
+                        <div class="service-content">
+                            <h3>Satisfaction du client</h3>
+                            <p>
+                                Nous nous adaptons constamment pour satisfaire les exigences au quotidien mais
+                                aussi sur le long terme de nos clients .
+                            </p>
+                            <a href="martxa/single-service.html">Voir plus </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".3s">
+                    <div class="service-wrap">
+                        <div class="service-content">
+                            <h3>Proximité</h3>
+                            <p>
+                                CTA development a une forte présence dans la sous region
+                                ouest africaine et continue de s'étendre au fil des années.
+                            </p>
+                            <a href="martxa/single-service.html">Voir plus </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".4s">
+                    <div class="service-wrap">
+                        <div class="service-content">
+                            <h3>Accompagnement de A à Z</h3>
+                            <p>
+                                De la conception à la deconstruction , un savoir faire sur toute la chaine de valeur.
+                            </p>
+                            <a href="martxa/single-service.html">Voir plus </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".5s">
+                    <div class="service-wrap">
+                        <div class="service-content">
+                            <h3>Expertise</h3>
+                            <p>
+                                Un savoir faire sans cesse renouvélé, à travers une equipe jeune, ambicieuse et dynamique.
+
+                            </p>
+                            <a href="martxa/single-service.html">Voir plus </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".6s">
+                    <div class="service-wrap">
+                        <div class="service-content">
+                            <h3>Back End Development</h3>
+                            <p>
+                                90 % de taux de reussite dans les meilleurs delais.
+                                injected humour, or randomised.
+                            </p>
+                            <a href="martxa/single-service.html">Voir plus </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- .service-area end -->
+
+    <!-- team-area start -->
+    <section class="team-area team-area2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-10 col-xs-12 wow fadeInUp">
+                    <div class="section-title section-title2">
+                        <h2>Nos services </h2>
+                        <p>The majority have suffered alteration in some form, by injected humour, or randomised. by injected humour, or randomised.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".1s">
+                    <div class="team-wrap2">
+                        <div class="team-img">
+                            <!--<img src="martxa/assets/images/team/1.jpg" alt="" />-->
+                            <img src="martxa/assets/images/cta/images_plan.jpeg"/>
+                            <div class="overlay">
+                                <!--<h3>Alex Jeson</h3>-->
+                                <!--<span>Marketing</span>-->
+                                <p>Voir plus  </p>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h3>Ingénierie Civile</h3>
+                            <!--<p>Marketing</p>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".2s">
+                    <div class="team-wrap2">
+                        <div class="team-img">
+                            <div class="overlay">
+                                <!--<h3>Connor Charles</h3>-->
+                                <!--<span>Founder</span>-->
+                                <p>Voir plus  </p>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                </ul>
+                            </div>
+                            <!--<img src="martxa/assets/images/team/2.jpg" alt="" />-->
+                            <img src="martxa/assets/images/cta/strategie.jpg" />
+                        </div>
+                        <div class="team-content">
+                            <h3>Conseil stratégieque </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 col wow fadeInUp"  data-wow-delay=".3s">
+                    <div class="team-wrap2">
+                        <div class="team-img">
+                            <div class="overlay">
+                                <!--<h3>Robert Kyle</h3>-->
+                                <!--<span>Sales Head</span>-->
+                                <p>Voir plus  </p>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                </ul>
+                            </div>
+                            <!--<img src="martxa/assets/images/team/3.jpg" alt="" />-->
+                            <img src="martxa/assets/images/cta/finances.jpg" />
+                        </div>
+                        <div class="team-content">
+                            <h3>Ingénierie financière</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".4s">
+                    <div class="team-wrap2">
+                        <div class="team-img">
+                            <div class="overlay">
+                                <!--<h3>Brayden Shar</h3>-->
+                                <!--<span>The Boss</span>-->
+                                <p>Voir plus  </p>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                </ul>
+                            </div>
+                            <!--<img src="martxa/assets/images/team/4.jpg" alt="" />-->
+                            <img src="martxa/assets/images/cta/management.jpg" />
+                        </div>
+                        <div class="team-content">
+                            <h3>Planification et management de projets </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- team-area end -->
+
+    <div class="pricing-table-area"> </div>
+    <!-- brand-area start -->
+    <section class="brand-area bg-img-2 black-opacity ptb-140">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-10 col-xs-12 wow fadeInUp">
+                    <div class="section-title section-title2">
+                        <h2>Nos partenaires </h2>
+                        <p>The majority have suffered alteration in some form, by injected humour, or randomised. by injected humour, or randomised.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="brand-active">
+                    <div class="col-xs-12">
+                        <div class="brand-wrap">
+                            <a href="#">
+                                <img src="martxa/assets/images/brand/1.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="brand-wrap">
+                            <a href="#">
+                                <img src="martxa/assets/images/brand/2.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="brand-wrap">
+                            <a href="#">
+                                <img src="martxa/assets/images/brand/3.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="brand-wrap">
+                            <a href="#">
+                                <img src="martxa/assets/images/brand/4.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="brand-wrap">
+                            <a href="#">
+                                <img src="martxa/assets/images/brand/5.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="brand-wrap">
+                            <a href="#">
+                                <img src="martxa/assets/images/brand/6.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="brand-wrap">
+                            <a href="#">
+                                <img src="martxa/assets/images/brand/7.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- brand-area end -->
+    <!-- footer-area start  -->
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12  col wow fadeInUp" data-wow-delay=".1s">
+                        <div class="footer-widget footer-logo">
+                            <h1>CTA development</h1>
+                            <p>Lor separat existentie es un myth. Por scientie, musica, sport etc, litot  usa li sam larLor separat existentie es un myth existentie.</p>
+                            <ul>
+                                <li><i class="fa fa-phone"></i> +245 5475 6645</li>
+                                <li><i class="fa fa-envelope"></i> info@yourdomail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".2s">
+                        <div class="footer-widget footer-menu">
+                            <h2>Footer Menu</h2>
+                            <ul>
+                                <li><a href="martxa/faq.html">Faq</a></li>
+                                <li><a href="martxa/about.html">About us</a></li>
+                                <li><a href="#">Customer Insights</a></li>
+                                <li><a href="martxa/service.html">FInancial Service</a></li>
+                                <li><a href="#">Business Devlopment</a></li>
+                                <li><a href="">Project Management</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".3s">
+                        <div class="footer-widget instagram-wrap">
+                            <h2>Instagram</h2>
+                            <ul>
+                                <li><a href="#">-</a></li>
+                                <li><a href="#">-</a></li>
+                                <li><a href="#">-</a></li>
+                                <li><a href="#">-</a></li>
+                                <li><a href="#">-</a></li>
+                                <li><a href="#">-</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".4s">
+                        <div class="footer-widget quick-contact">
+                            <h2>Quick Contact</h2>
+                            <form action="#">
+                                <input type="text" placeholder="Full Name">
+                                <input type="email" placeholder="Email">
+                                <textarea name="massage" id="massage" cols="30" rows="10" placeholder="Massage"></textarea>
+                                <button type="button" name="button" class="btn-style">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" style="color: white;">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-area end  -->
 {% endblock %}

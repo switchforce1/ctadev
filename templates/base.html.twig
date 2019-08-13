@@ -1,12 +1,47 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="martxa/image/png" href="martxa/assets/images/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+    {#All css#}
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+
+
+</head>
+<body>
+{% block body %}{% endblock %}
+<!-- all js here -->
+{% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+    {{ encore_entry_script_tags('jquery') }}
+    {#{{ encore_entry_script_tags('modernizr') }}#}
+    {{ encore_entry_script_tags('bootstrap') }}
+    {{ encore_entry_script_tags('carousel') }}
+    {{ encore_entry_script_tags('counterup') }}
+    {{ encore_entry_script_tags('imagesloaded') }}
+    {{ encore_entry_script_tags('isotope') }}
+    {{ encore_entry_script_tags('jquery.waypoints') }}
+    {{ encore_entry_script_tags('jquery.magnific-popup') }}
+    {{ encore_entry_script_tags('jquery.slicknav') }}
+    {{ encore_entry_script_tags('snake') }}
+    {{ encore_entry_script_tags('wow') }}
+    {{ encore_entry_script_tags('plugins') }}
+    {{ encore_entry_script_tags('scripts') }}
+{% endblock %}
+</body>
 </html>
+
+
+
+
+
+
+

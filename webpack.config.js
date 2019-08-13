@@ -1,19 +1,4 @@
 var Encore = require('@symfony/webpack-encore');
-const Fiber = require('fibers');
-
-// const cssLoaders = [
-//     {
-//         loader: 'css-loader',
-//         options: applyOptionsCallback(webpackConfig.cssLoaderConfigurationCallback, options)
-//     },
-// ];
-const cssLoader = {
-    loader: "css-loader"
-};
-
-cssLoader.options = {
-    minimize: true
-};
 
 // Manually configure the runtime environment if not already configured yet by the "encore" command.
 // It's useful when you use tools that rely on webpack.config.js file.
@@ -38,12 +23,19 @@ Encore
      * Each entry will result in one JavaScript file (e.g. app.js)
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
-    // .addStyleEntry('css/plugins', './assets/css/plugins.scss')
+     // .addStyleEntry('css/plugins', './assets/css/plugins.scss')
+    // require( "../plugins/martxa/css/animate.css");
+    // require( "../plugins/martxa/css/owl.carousel.css");
+    // require( "../plugins/martxa/css/font-awesome.min.css");
+    // require( "../plugins/martxa/css/magnific-popup.css");
+    // require( "../plugins/martxa/css/slicknav.min.css");
+    // require( "../plugins/martxa/css/styles.css");
+    // require( "../plugins/martxa/css/responsive.css");
+    //  .addStyleEntry('animated', './assets/plugins/martxa/css/animate.css')
 
     .addEntry('app', './assets/js/app.js')
-
     .addEntry('jquery',"./assets/plugins/martxa/js/vendor/jquery-1.12.4.min.js")
-    .addEntry('modernizr',"./assets/plugins/martxa/js/vendor/modernizr-2.8.3.min.js")
+    // .addEntry('modernizr',"./assets/plugins/martxa/js/vendor/modernizr-2.8.3.min.js")
     .addEntry('bootstrap',"./assets/plugins/martxa/js/bootstrap.min.js")
     .addEntry('carousel',"./assets/plugins/martxa/js/owl.carousel.min.js")
     .addEntry('counterup',"./assets/plugins/martxa/js/counterup.main.js")
@@ -60,8 +52,6 @@ Encore
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')
 
-    //.addEntry('js/app', './assets/c')
-    // .addEntry('js/template', './assets/plugins/plugins.js')
     //.addEntry('plugins', './assets/plugins/**')
 
 
@@ -90,7 +80,7 @@ Encore
         useBuiltIns: 'usage',
         corejs: 3
     })
-    // .configureCssLoader()
+    // .configureCssLoader( )
     // .enablePostCssLoader(postCssConfig)
     // enables Sass/SCSS support
     .enableSassLoader()
@@ -104,12 +94,28 @@ Encore
 
     // uncomment if you're having problems with a jQuery plugin
     .autoProvidejQuery()
+    // .configureBabel(function(babelConfig) {
+    //     babelConfig.plugins = [
+    //         "@babel/transform-runtime",
+    //         "@babel/transform-async-to-generator"
+    //     ]
+    // })
 
     // uncomment if you use API Platform Admin (composer req api-admin)
     //.enableReactPreset()
-    //.addEntry('admin', './assets/js/admin.js')
+    .copyFiles({
+        from: './assets/plugins/martxa/images',
+        // optional target path, relative to the output dir
+        to: '../martxa/assets/images/[path][name].[ext]',
+
+        // if versioning is enabled, add the file hash too
+        // to: 'images/[path][name].[hash:8].[ext]',
+
+        // only copy files matching this pattern
+        pattern: /\.(png|jpg|jpeg)$/
+    })
 ;
-Encore.configureCssLoader(cssLoader.toLocaleString);
+//Encore.configureCssLoader(cssLoader.toLocaleString);
 
 encoreConfig = Encore.getWebpackConfig();
 
