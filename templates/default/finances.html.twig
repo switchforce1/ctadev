@@ -3,18 +3,72 @@
 {% block title %}Hello DefaultController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- preloder-wrap -->
+    <div id="cssLoader3" class="preloder-wrap">
+        <div class="loader">
+            <div class="child-common child4"></div>
+            <div class="child-common child3"></div>
+            <div class="child-common child2"></div>
+            <div class="child-common child1"></div>
+        </div>
+    </div>
+    <!-- preloder-wrap -->
+    <!-- search-area -->
+    <div class="search-area">
+        <span class="closs-btn">Close</span>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="search-form">
+                        <form action="#">
+                            <input type="text" name="search" placeholder="Search Here">
+                            <button type="button" name="button" class="btn-style">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- search-area -->
+    <!-- heared area start -->
+    {% include "block/_header.html.twig" %}
+    <!-- heared area end -->
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <section class="team-area team-area2">
+        <div class="container">
+            <div class="row">
+                L’Ingénierie Financière est l’ensemble des méthodes et des techniques mises en œuvre pour maintenir l’équilibre financier de l’entreprise en préservant la solidité de son bilan, la cohésion entre ses différents actionnaires et l’adéquation entre finance et capital.
+                CTA DEV met à disposition son expertise pour vous aider à répondre aux attentes de vos actionnaires ou associés, de vos investisseurs et dirigeants de votre entreprise.
+                Nous intervenons dans les domaines suivants :
+                ·         Analyse financière
+                ·         Economie d’entreprise
+                ·         Fiscalité
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/wamp64/www/ctadev/src/Controller/DefaultController.php'|file_link(0) }}">src/Controller/DefaultController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/wamp64/www/ctadev/templates/default/index.html.twig'|file_link(0) }}">templates/default/index.html.twig</a></code></li>
-    </ul>
-</div>
+
+                L'ingénierie financière est un ensemble de techniques financières qui permettent de réaliser les objectifs de financement, de valorisation, d'investissements, de gestion de portefeuille optimums pour l'entreprise, l'actionnaire ou plus généralement l'investisseur.
+
+                L’ingénierie financière peut être conçue comme l’ensemble des méthodes et techniques mises en œuvre pour viabiliser financièrement l’entreprise au-delà de ses mutations, en préservant la solidité de son bilan, la cohésion de son actionnariat et l’adéquation entre finance et capital. C’est spécifiquement l’art et la manière de combiner et d’organiser différentes disciplines et domaines de compétences afin de répondre au mieux aux attentes des actionnaires ou associés, des investisseurs, des entreprises et de leurs dirigeants.
+
+
+                *****--------------*---------------***
+                l'ingénierie financière  est un secteur d'activité spécialisé dans la finance, et plus particulièrement de la banque,
+                de la finance d'entreprise et de la finance de marché. A travers nos ingénieur financier , nous aidons nos clients à  :
+
+                •	Etablir et optimiser des montages de financement complexes (introduction en bourse, augmentation de capital…),
+                •	Combiner et manipuler des instruments financiers variés (titres, prêts, dérivés de toutes natures),
+                •	Créer et optimiser les moyens de financement adaptés à un projet ou une opération donnée (financement de projet, titrisation de crédits, fusion-acquisition...),
+                •	Faire intervenir  plusieurs établissements financiers selon des besoins et des délais spécifiques,
+                •	Apporter une attention particulière sur leurs finances afin de réduire les risques et optimiser la rentabilité.
+
+            </div>
+        </div>
+    </section>
+
+    <!-- brand-area end -->
+    <!-- footer-area start  -->
+    {% include 'block/_footer.html.twig' %}
+    <!-- footer-area end  -->
 {% endblock %}

@@ -3,18 +3,102 @@
 {% block title %}Hello DefaultController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- preloder-wrap -->
+    <div id="cssLoader3" class="preloder-wrap">
+        <div class="loader">
+            <div class="child-common child4"></div>
+            <div class="child-common child3"></div>
+            <div class="child-common child2"></div>
+            <div class="child-common child1"></div>
+        </div>
+    </div>
+    <!-- preloder-wrap -->
+    <!-- search-area -->
+    <div class="search-area">
+        <span class="closs-btn">Close</span>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="search-form">
+                        <form action="#">
+                            <input type="text" name="search" placeholder="Search Here">
+                            <button type="button" name="button" class="btn-style">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- search-area -->
+    <!-- heared area start -->
+    {% include "block/_header.html.twig" %}
+    <!-- heared area end -->
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <section class="team-area team-area2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="contact-wrap form-style">
+                        <h3>Contact Me</h3>
+                        <div class="cf-msg"></div>
+                        <form action="mail.php" method="post" id="cf">
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-12">
+                                    <input type="text" placeholder="Name" id="fname" name="fname">
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                    <input type="text" placeholder="Email" id="email" name="email">
+                                </div>
+                                <div class="col-xs-12">
+                                    <input type="text" placeholder="Subject" id="subject" name="subject">
+                                </div>
+                                <div class="col-xs-12">
+                                    <textarea class="contact-textarea" placeholder="Message" id="msg" name="msg"></textarea>
+                                </div>
+                                <div class="col-xs-12">
+                                    <button id="submit" class="cont-submit btn-contact" name="submit">SEND MESSAGE</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-wrap">
+                        <ul>
+                            {#<li>#}
+                                {#<i class="fa fa-phone"></i>#}
+                                {#<p>+842 1544 2554</p>#}
+                                {#<p>+842 1544 2554</p>#}
+                            {#</li>#}
+                            {#<li>#}
+                                {#<i class="fa fa-envelope"></i>#}
+                                {#<p>martxa1545@gmail.com</p>#}
+                                {#<p>martxa1545@gmail.com</p>#}
+                            {#</li>#}
+                            {#<li>#}
+                                {#<i class="fa fa-fax"></i>#}
+                                {#<p>15455 54564866 3554</p>#}
+                                {#<p>15455 54564866 3554</p>#}
+                            {#</li>#}
+                            {#<li>#}
+                                {#<i class="fa fa-location-arrow"></i>#}
+                                {#227 Marion Street Address Here Columbia, SC 29201#}
+                            {#</li>#}
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div id="googleMap"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/wamp64/www/ctadev/src/Controller/DefaultController.php'|file_link(0) }}">src/Controller/DefaultController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/wamp64/www/ctadev/templates/default/index.html.twig'|file_link(0) }}">templates/default/index.html.twig</a></code></li>
-    </ul>
-</div>
+    <!-- brand-area end -->
+    <!-- footer-area start  -->
+    {% include 'block/_footer.html.twig' %}
+    <!-- footer-area end  -->
 {% endblock %}

@@ -24,18 +24,10 @@ Encore
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
      // .addStyleEntry('css/plugins', './assets/css/plugins.scss')
-    // require( "../plugins/martxa/css/animate.css");
-    // require( "../plugins/martxa/css/owl.carousel.css");
-    // require( "../plugins/martxa/css/font-awesome.min.css");
-    // require( "../plugins/martxa/css/magnific-popup.css");
-    // require( "../plugins/martxa/css/slicknav.min.css");
-    // require( "../plugins/martxa/css/styles.css");
-    // require( "../plugins/martxa/css/responsive.css");
-    //  .addStyleEntry('animated', './assets/plugins/martxa/css/animate.css')
 
     .addEntry('app', './assets/js/app.js')
-    .addEntry('jquery',"./assets/plugins/martxa/js/vendor/jquery-1.12.4.min.js")
-    // .addEntry('modernizr',"./assets/plugins/martxa/js/vendor/modernizr-2.8.3.min.js")
+    // .addEntry('jquery',"./assets/plugins/martxa/js/vendor/jquery-1.12.4.min.js")
+    .addEntry('modernizr',"./assets/plugins/martxa/js/vendor/modernizr-2.8.3.min.js")
     .addEntry('bootstrap',"./assets/plugins/martxa/js/bootstrap.min.js")
     .addEntry('carousel',"./assets/plugins/martxa/js/owl.carousel.min.js")
     .addEntry('counterup',"./assets/plugins/martxa/js/counterup.main.js")
@@ -93,7 +85,7 @@ Encore
     //.enableIntegrityHashes(Encore.isProduction())
 
     // uncomment if you're having problems with a jQuery plugin
-    .autoProvidejQuery()
+    // .autoProvidejQuery()
     // .configureBabel(function(babelConfig) {
     //     babelConfig.plugins = [
     //         "@babel/transform-runtime",

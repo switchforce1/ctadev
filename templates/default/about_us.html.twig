@@ -3,18 +3,90 @@
 {% block title %}Hello DefaultController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- preloder-wrap -->
+    <div id="cssLoader3" class="preloder-wrap">
+        <div class="loader">
+            <div class="child-common child4"></div>
+            <div class="child-common child3"></div>
+            <div class="child-common child2"></div>
+            <div class="child-common child1"></div>
+        </div>
+    </div>
+    <!-- preloder-wrap -->
+    <!-- search-area -->
+    <div class="search-area">
+        <span class="closs-btn">Close</span>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="search-form">
+                        <form action="#">
+                            <input type="text" name="search" placeholder="Search Here">
+                            <button type="button" name="button" class="btn-style">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- search-area -->
+    <!-- heared area start -->
+    {% include "block/_header.html.twig" %}
+    <!-- heared area end -->
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <section class="brand-area bg-img-2 ptb-140">
+        <div class="container">
+            <div class="row">
+                Who We Are
+                CTA Development Ltd comprises a blend of professionals and consultants in many fields of endeavour. As a business advisory firm, we are especially adept at Business Development and process Re-engineering for clients. Our expertise is in the structuring and implementation of large scale projects in;
+                <ul>
+                    <li>Infrastructure</li>
+                    <li>Energy</li>
+                    <li>Oil and Gas</li>
+                    <li>Real Estate</li>
+                    <li>Agriculture</li>
+                    <li>Telecommunications</li>
+                    <li>Transport</li>
+                    <li>Logistics Supply</li>
+                    <li>Project Funding Facilitation</li>
+                </ul>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/wamp64/www/ctadev/src/Controller/DefaultController.php'|file_link(0) }}">src/Controller/DefaultController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/wamp64/www/ctadev/templates/default/index.html.twig'|file_link(0) }}">templates/default/index.html.twig</a></code></li>
-    </ul>
-</div>
+                What We Do
+                We are agents of transformation. CTA Development specialises in identifying big ticket items which are critical to nation development and locates the required resources from around the globe to execute, optimise performance and create enormous value for all stake holders. We assist corporate entities to build capacity for bold projects and facilitate the relationship that is necessary for the government to understand the private sector and vice versa.
+                <br/>
+                How We Do It
+                CTA Development has built a track record over the last 30 years of excellent business relationships, trust and execution. Our strategy is anchored on establishing Strategic Partnerships and Sync Alliances that make perfect business sense to wholly meet client needs. All our projects exhibit a successful track record which is the main driver of our expansion into West Africa. All projects that CTA Development is committed to must post at least, a 100% success rate so that they can be leveraged in the sub region.
+                <br/>
+                Our Vision
+                <br/>
+                To be recognised as the most results-oriented business developer and value creator in West Africa.
+                <br/>
+                Mission
+                To provide qualitative business process engineering services, on a timely basis, for our cherished clients by adopting cutting edge strategies, relying on qualified, experienced, job satisfied and motivated staff.
+                <br/>
+                Why Work with CTA Development
+                <br/>
+                <h3>CREATIVITY</h3>
+                We initiate and evolve processes to create ventures that hold and give great value. Every project has a peculiar strategy to execute. The deconstruction of the investment is necessary to birth the right strategy for success and this is a trademark secret of CTA Development.
+                <br/>
+                <h3>ENACITY</h3>
+                We turn boundaries and challenges into access and opportunities. We are unrelenting in the strive to accomplish our goals. Every trial or trying moments is seen as an occurrence with hidden prospects which CTA Development must exploit for the common good.
+                <br/>
+                <h3>ACCOMPLISHMENT</h3>
+                Our index of fulfillment is measured by the successful execution of projects, job creation, wealth increase and improvements in humanity.
+            </div>
+        </div>
+    </section>
+
+    <!-- blog-area end -->
+    <div class="pricing-table-area"> </div>
+    <!-- brand-area start -->
+    {% include "block/_partner.html.twig" %}
+    <!-- brand-area end -->
+    <!-- footer-area start  -->
+    {% include 'block/_footer.html.twig' %}
+    <!-- footer-area end  -->
 {% endblock %}

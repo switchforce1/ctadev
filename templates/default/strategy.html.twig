@@ -1,0 +1,74 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DefaultController!{% endblock %}
+
+{% block body %}
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- preloder-wrap -->
+    <div id="cssLoader3" class="preloder-wrap">
+        <div class="loader">
+            <div class="child-common child4"></div>
+            <div class="child-common child3"></div>
+            <div class="child-common child2"></div>
+            <div class="child-common child1"></div>
+        </div>
+    </div>
+    <!-- preloder-wrap -->
+    <!-- search-area -->
+    <div class="search-area">
+        <span class="closs-btn">Close</span>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="search-form">
+                        <form action="#">
+                            <input type="text" name="search" placeholder="Search Here">
+                            <button type="button" name="button" class="btn-style">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- search-area -->
+    <!-- heared area start -->
+    {% include "block/_header.html.twig" %}
+    <!-- heared area end -->
+
+    <section class="team-area team-area2">
+        <div class="container">
+            <div class="row">
+                Le conseil stratégique est un domaine à la fois vaste par les activités qu’il couvre et précis pour les solutions qu’il apporte. Nos conseillers en stratégique  accompagnent plusieurs entreprises de différentes tailles et dans plusieurs secteurs d'activité dans leur désir de développement. Le champ d’action de notre expertise est très vaste et peut s’exprimer sous plusieurs formes. En effet il peut s’agir d’un simple conseil à propos d’une opportunité ou soit de support pour le pilotage d’un projet ou encore d’un soutien à la gouvernance de l’entreprise.
+                <br>
+                Les actions les plus récurrentes sont les suivantes:
+                <ul>
+                    <li>Choix du meilleur régime de l’entreprise : SA, SARL, Etablissement …</li>
+                    <li>Choix des partenaires,</li>
+                    <li>Conception d’un cahier de charge,</li>
+                    <li>Gestions des appels d’offres,</li>
+                    <li>Optimisations fiscales</li>
+                    <li>Délocalisation,</li>
+                    <li>Choix et gestion des Investissements,</li>
+                    <li>Elaboration et suivi d’un plan de développement,</li>
+                    <li>Choix des ressources humaine,</li>
+                    <li>Publicité,</li>
+                    <li>Aménagement,</li>
+                    <li>Réponse aux appels d’offre,</li>
+                    <li>Support juridique ,</li>
+                </ul>
+                Planification et mise en Oeuvre d’un modèle d'expansion,
+                Différentiation et fidélisation de la clientèle,
+                Veille technologique, économique, financière, juridique, concurrentielle …<br>
+                Nous accueillons dans ce domaine à travers nos multiples partenariats avec de grandes entreprises du monde entier. Ces partenariats sont complétés par l'expérience et l’enthousiasme de nos conseillers. Nous prévoyons être leader du domaine en Afrique d’ici 2025 et ainsi nous tailler une place de choix dans le classement mondiale.
+
+            </div>
+        </div>
+    </section>
+
+    <!-- brand-area end -->
+    <!-- footer-area start  -->
+    {% include 'block/_footer.html.twig' %}
+    <!-- footer-area end  -->
+{% endblock %}

@@ -3,18 +3,81 @@
 {% block title %}Hello DefaultController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- preloder-wrap -->
+    <div id="cssLoader3" class="preloder-wrap">
+        <div class="loader">
+            <div class="child-common child4"></div>
+            <div class="child-common child3"></div>
+            <div class="child-common child2"></div>
+            <div class="child-common child1"></div>
+        </div>
+    </div>
+    <!-- preloder-wrap -->
+    <!-- search-area -->
+    <div class="search-area">
+        <span class="closs-btn">Close</span>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="search-form">
+                        <form action="#">
+                            <input type="text" name="search" placeholder="Search Here">
+                            <button type="button" name="button" class="btn-style">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- search-area -->
+    <!-- heared area start -->
+    {% include "block/_header.html.twig" %}
+    <!-- heared area end -->
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <section class="team-area team-area2">
+        <div class="container">
+            <div class="row">
+                Le génie civil représente l'ensemble des techniques de constructions civiles. Les ingénieurs civils ou ingénieurs en génie civil s’occupent de la conception, la réalisation, l’exploitation et la réhabilitation d’ouvrages de construction et d’infrastructures dont ils assurent la gestion afin de répondre aux besoins de la société, tout en assurant la sécurité du public et la protection de l’environnement. Très variées, leurs réalisations se répartissent principalement dans cinq grands domaines d’intervention : structures, géotechnique, hydraulique, transport, et environnement
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/wamp64/www/ctadev/src/Controller/DefaultController.php'|file_link(0) }}">src/Controller/DefaultController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/wamp64/www/ctadev/templates/default/index.html.twig'|file_link(0) }}">templates/default/index.html.twig</a></code></li>
-    </ul>
-</div>
+                Nous assurons lla conception, la réalisation, l’exploitation et la réhabilitation de vos ouvrages de constructions et d’infrastructures. Notre objectif, répondre à vos besoins tout en optimisant les coûts et assurant une bonne qualité.
+
+
+
+                CTA propose les ouvrages aussi  :
+                CTA intervient  auprès de ses partenaires et clients comme  :
+
+                Support à l’identification des projets auprès des décideurs publics comme privés.
+                Acteur de conception et design du futur. Le futur de vos infrastructures, de vos habitats, de vos espaces urbains et péri-urbains, collectifs ou privés.
+                Experte en pilotage et management de l'implémentation de vos ouvrages sous la double exigence de la totale qualité et du coût optimal.
+
+                Exemples de réalisations
+                le gros œuvre et les fondations des bâtiments, de toute nature ;
+                les barrages, quais, écluses, bassins de rétention, digues et jetées,
+                l’ossature porteuse des constructions industrielles, usines, réservoirs, canalisations,
+
+                Nous intervenons sur trois phases :
+                la conception et la définition de l’ouvrage, accompagnées d’une étude de sa rentabilité ;
+                l’élaboration du projet technique détaillé ;
+                l’exécution des travaux de construction.
+
+
+
+
+                Support à l’identification des projets auprès des décideurs publics comme privés
+
+                Concevoir et designer votre futur. Le futur de vos infrastructures, de vos habitats, de vos espaces urbains et péri-urbains, collectifs ou privés.
+
+                Piloter et manager l'implémentation de vos ouvrages sous la double exigence de la totale qualité et du coût optimal.
+
+            </div>
+        </div>
+    </section>
+
+    <!-- brand-area end -->
+    <!-- footer-area start  -->
+    {% include 'block/_footer.html.twig' %}
+    <!-- footer-area end  -->
 {% endblock %}

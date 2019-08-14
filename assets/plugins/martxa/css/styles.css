@@ -114,29 +114,29 @@ ul{
 	content:"";
 	z-index:-9;
 }
-/*.bg-img-1{*/
-	/*background:url(../images/bg/4.jpg)no-repeat center center / cover;*/
-/*}*/
+.bg-img-1{
+	background:url(../images/bg/4.jpg)no-repeat center center / cover;
+}
 /*.bg-img-2{*/
-	/*background:url(../images/bg/5.jpg)no-repeat center center / cover;*/
+	/*background:url(..images/bg/5.jpg)no-repeat center center / cover;*/
 /*}*/
 /*.bg-img-3{*/
-	/*background:url(../images/bg/6.jpg)no-repeat center center / cover;*/
+	/*background:url(..images/bg/6.jpg)no-repeat center center / cover;*/
 /*}*/
 /*.bg-img-4{*/
-	/*background:url(../images/bg/7.jpg)no-repeat center center / cover;*/
+	/*background:url(..images/bg/7.jpg)no-repeat center center / cover;*/
 /*}*/
 /*.bg-img-5{*/
-	/*background:url(../images/bg/8.jpg)no-repeat center center / cover;*/
+	/*background:url(..images/bg/8.jpg)no-repeat center center / cover;*/
 /*}*/
 /*.bg-img-6{*/
-	/*background:url(../images/bg/9.jpg)no-repeat center center / cover;*/
+	/*background:url(..images/bg/9.jpg)no-repeat center center / cover;*/
 /*}*/
 /*.bg-img-7{*/
-	/*background:url(../images/bg/10.jpg)no-repeat center center / cover;*/
+	/*background:url(..images/bg/10.jpg)no-repeat center center / cover;*/
 /*}*/
 /*.bg-img-8{*/
-	/*background:url(../images/bg/11.jpg)no-repeat center center / cover;*/
+	/*background:url(..images/bg/11.jpg)no-repeat center center / cover;*/
 /*}*/
 /*preloader-area */
 .preloder-wrap {

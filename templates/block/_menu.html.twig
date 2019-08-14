@@ -1,0 +1,36 @@
+<div class="mainmenu">
+    <ul id="navigation">
+        <li class="active">
+            <a href="#">Home
+                <!--<i class="fa fa-angle-down"></i>-->
+            </a>
+            <!--<ul class="submenu">-->
+            <!--<li><a href="#">Home One</a></li>-->
+            <!--<li class="active"><a href="#">Home Two</a></li>-->
+            <!--<li><a href="#">Home Three</a></li>-->
+            <!--</ul>-->
+        </li>
+        <li><a href="{{ path('about_us') }}">About <i class="fa fa-angle-down"></i></a>
+            {#<ul class="submenu">#}
+                {#<li><a href="#">about One</a></li>#}
+                {#<li><a href="#">about Two</a></li>#}
+                {#<li><a href="#">about Three</a></li>#}
+            {#</ul>#}
+        </li>
+        <li><a href="#">Service <i class="fa fa-angle-down"></i></a>
+            <ul class="submenu">
+                <li><a href="{{ path("btp") }}"> BTP </a></li>
+                <li><a href="{{ path('strategy') }}"> CONSEIL STRATÉGIEQUE </a></li>
+                <li><a href="{{ path('finances') }}"> INGÉNIERIE FINANCIÈRE </a></li>
+                <li><a href="{{ path('projects') }}"> PLANIFICATION ET MANAGEMENT DE PROJETS </a></li>
+            </ul>
+        </li>
+        {#<li><a href="#">Equipe <i class="fa fa-angle-down"></i></a>#}
+            {#<ul class="submenu">#}
+                {#<li><a href="#">Equipe Une</a></li>#}
+                {#<li><a href="#">Team Three</a></li>#}
+            {#</ul>#}
+        {#</li>#}
+        <li><a href="{{ path("contact") }}">Contact</a></li>
+    </ul>
+</div>

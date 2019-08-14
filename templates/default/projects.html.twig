@@ -3,18 +3,58 @@
 {% block title %}Hello DefaultController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- preloder-wrap -->
+    <div id="cssLoader3" class="preloder-wrap">
+        <div class="loader">
+            <div class="child-common child4"></div>
+            <div class="child-common child3"></div>
+            <div class="child-common child2"></div>
+            <div class="child-common child1"></div>
+        </div>
+    </div>
+    <!-- preloder-wrap -->
+    <!-- search-area -->
+    <div class="search-area">
+        <span class="closs-btn">Close</span>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="search-form">
+                        <form action="#">
+                            <input type="text" name="search" placeholder="Search Here">
+                            <button type="button" name="button" class="btn-style">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- search-area -->
+    <!-- heared area start -->
+    {% include "block/_header.html.twig" %}
+    <!-- heared area end -->
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <section class="team-area team-area2">
+        <div class="container">
+            <div class="row">
+                Il s’agit d’un domaine très vaste qui couvre toutes les branches d’une entreprise. Le domaine de planification et de management de projet est en temps normale le point focal et l’essence même d’une entreprise. Il a pour but transformer une idée et résultats en utilisant de façon efficace et effaces les ressources disponibles.
+                En générale cette discipline se base sur une démarche qui comporte quatre phases indispensables :
+                -        La conception : phase du projet et où l’on met  une ou des idées sur la table puis l’on envisage la rentabilité et bénéfices.
+                -        La planification : Elle consiste à définir toutes les actions à réaliser afin d’atteindre l’objectif fixé dans la première phase. A la fin de cette évaluation il est nécessaire d’avoir un calendrier à suivre et aussi s’assurer qu’on disposera des ressources à temps pour réaliser les actions nécessaire.
+                -        La réalisation : Il s’agit de mettre d’exécuter toutes les actions définies dans la phase de planification en utilisant les ressources mise à disposition. Toute l’essence du projet réside dans cette phase.
+                -        Exploitation et livraison : Selon le domaine, du cahier des charges ou du contrat qui régit le projet cette phase sera différente.
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/wamp64/www/ctadev/src/Controller/DefaultController.php'|file_link(0) }}">src/Controller/DefaultController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/wamp64/www/ctadev/templates/default/index.html.twig'|file_link(0) }}">templates/default/index.html.twig</a></code></li>
-    </ul>
-</div>
+                Nous apportons notre expertise dans toutes les phases d’un projet quelque soit le domaine dans lequel ce dernier se situe : génie civile, banque, assurance, santé, informatique … Nous portons également point d’honneur sur la prestation digitale en s’assurant que notre service correspond bien à la spécificité de votre entreprise (tailles, situation géographique, secteur, histoire…). Nous utilisations des outils et méthodes contemporaine qui ont fait leurs preuve tels que l’agilité, Scrum, la théorie des graphes …
+
+            </div>
+        </div>
+    </section>
+
+    <!-- brand-area end -->
+    <!-- footer-area start  -->
+    {% include 'block/_footer.html.twig' %}
+    <!-- footer-area end  -->
 {% endblock %}
