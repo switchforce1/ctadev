@@ -78,6 +78,16 @@ class DefaultController extends AbstractController
     }
 
     /**
+     * @Route("/blank.html", name="blank.html")
+     */
+    public function blankHtml()
+    {
+        return $this->render('default/blank_html.html.twig', [
+            'controller_name' => 'DefaultController',
+        ]);
+    }
+
+    /**
      * @Route("/legacy", name="legacy")
      */
     public function legacy()
