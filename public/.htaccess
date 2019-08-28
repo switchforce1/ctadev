@@ -1,5 +1,5 @@
 <IfModule mod_rewrite.c>
-    Options +FollowSymLinks -MultiViews
+    Options Indexes FollowSymLinks MultiViews
     RewriteEngine On
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^(.*)$ index.php [QSA,L]
